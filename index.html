@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LSSEMS - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Local Service Search & Management System (LSSEMS)</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="category.html">Categories</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-box">
+      <h3>Find a Service Provider</h3>
+      <form action="serviceman-search.html" method="GET">
+        <label for="category">Service Category:</label>
+        <select id="category" name="category" required>
+        <option value="Plumber">Plumber</option>
+        <option value="Electrician">Electrician</option>
+        <option value="Carpenter">Carpenter</option>
+        <option value="Cleaner">Cleaner</option>
+        <option value="Painter">Painter</option>
+        <option value="Mechanic">Mechanic</option>
+        <option value="Tutor">Tutor</option>
+        <option value="Gardener">Gardener</option>
+        <option value="IT Support">IT Support</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter city (e.g. Dhaka)" required>
+
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSSEMS</p>
+  </footer>
+</body>
+</html>
